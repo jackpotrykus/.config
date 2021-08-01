@@ -1,0 +1,12 @@
+# Junk files
+*.DS_Store
+*tags
+*.netrwhist
+
+# This should be remade locally on each computer
+nvim/plugin/packer_compiled.lua
+
+# Directories
+*gcloud
+*gh
+*yarn
