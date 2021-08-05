@@ -54,4 +54,4 @@ vim.o.completeopt = 'menuone,noselect' -- removed noinsert
 
 -- Set colorscheme (order is important here)
 vim.o.termguicolors = true
-vim.cmd[[colorscheme dracula]]
+vim.cmd[[colorscheme tokyonight]]
