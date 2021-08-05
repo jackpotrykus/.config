@@ -14,29 +14,32 @@ vim.api.nvim_exec([[
 ]], false)
 
 -- 1. <leader> shortcuts
--- 1.1 Telesecope shortcuts
-vim.api.nvim_set_keymap('n' ,'<leader>f',  [[<cmd>lua require('telescope.builtin').find_files()<CR>]],                     {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>e',  [[<cmd>lua require('telescope.builtin').file_browser()<CR>]],                   {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>o',  [[<cmd>lua require('telescope.builtin').vim_options()<CR>]],                    {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>oo', [[<cmd>lua require('telescope.builtin').keymaps()<CR>]],                        {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>p',  [[<cmd>lua require('telescope.builtin').man_pages()<CR>]],                      {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>b',  [[<cmd>lua require('telescope.builtin').buffers()<CR>]],                        {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>w',  [[<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>]],      {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>t',  [[<cmd>lua require('telescope.builtin').tags()<CR>]],                           {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>y',  [[<cmd>lua require('telescope.builtin').tags{only_current_buffer = true}<CR>]], {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>?',  [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]],                       {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>dd', [[<cmd>lua require('telescope.builtin').grep_string()<CR>]],                    {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>d',  [[<cmd>lua require('telescope.builtin').live_grep()<CR>]],                      {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>gc', [[<cmd>lua require('telescope.builtin').git_commits()<CR>]],                    {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>gb', [[<cmd>lua require('telescope.builtin').git_branches()<CR>]],                   {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>gs', [[<cmd>lua require('telescope.builtin').git_status()<CR>]],                     {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n' ,'<leader>gp', [[<cmd>lua require('telescope.builtin').git_bcommits()<CR>]],                   {noremap = true, silent = true})
+-- 1.1 Telesecope shortcuts all beign with <leader>f
+vim.api.nvim_set_keymap('n' ,'<leader>ff', [[<cmd>lua require('telescope.builtin').find_files()<CR>]],                      {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fe', [[<cmd>lua require('telescope.builtin').file_browser()<CR>]],                    {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fo', [[<cmd>lua require('telescope.builtin').vim_options()<CR>]],                     {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fk', [[<cmd>lua require('telescope.builtin').keymaps()<CR>]],                         {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fm', [[<cmd>lua require('telescope.builtin').man_pages()<CR>]],                       {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fb',  [[<cmd>lua require('telescope.builtin').buffers()<CR>]],                        {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fw',  [[<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>]],      {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>ft',  [[<cmd>lua require('telescope.builtin').tags()<CR>]],                           {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fy',  [[<cmd>lua require('telescope.builtin').tags{only_current_buffer = true}<CR>]], {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>f?',  [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]],                       {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fs', [[<cmd>lua require('telescope.builtin').grep_string()<CR>]],                     {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fj',  [[<cmd>lua require('telescope.builtin').live_grep()<CR>]],                      {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fgc', [[<cmd>lua require('telescope.builtin').git_commits()<CR>]],                    {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fgb', [[<cmd>lua require('telescope.builtin').git_branches()<CR>]],                   {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fgs', [[<cmd>lua require('telescope.builtin').git_status()<CR>]],                     {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fgp', [[<cmd>lua require('telescope.builtin').git_bcommits()<CR>]],                   {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fls',  [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]],          {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>fld',  [[<cmd>lua require('telescope.builtin').lsp_definitions()<CR>]],               {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n' ,'<leader>flr',  [[<cmd>lua require('telescope.builtin').lsp_references()<CR>]],                {noremap = true, silent = true})
 
 -- 1.2 Toggle NvimTree with <leader>a
 vim.api.nvim_set_keymap('n', '<leader>a', ':NvimTreeToggle<CR>', {noremap = true})
 
--- 1.3 Toggle SymbolsOutline with <leader>s
-vim.api.nvim_set_keymap('n', '<leader>s', ':SymbolsOutline<CR>', {noremap = true})
+-- 1.3 Toggle SymbolsOutline with <leader>so
+vim.api.nvim_set_keymap('n', '<leader>so', ':SymbolsOutline<CR>', {noremap = true})
 
 -- 1.4 Toggle LspTrouble with <leader>q
 vim.api.nvim_set_keymap('n', '<leader>q', '<cmd>LspTroubleToggle<cr>', {silent = true, noremap = true})
@@ -70,7 +73,7 @@ vim.api.nvim_set_keymap('v', '<leader>k', ':m \'<-2<CR>gv=gv',   {noremap = true
 -- vim.api.nvim_set_keymap('i', '<leader>j', '<Esc>:m .+1<CR>==gi', {noremap = true})
 -- vim.api.nvim_set_keymap('i', '<leader>k', '<Esc>:m .-2<CR>==gi', {noremap = true})
 
--- 2.2 Remap for dealing with word wrap
+-- 2.2 Better j and k
 vim.api.nvim_set_keymap('n', 'k', 'v:count == 0 ? "gk" : "k"', {noremap = true, expr = true, silent = true})
 vim.api.nvim_set_keymap('n', 'j', 'v:count == 0 ? "gj" : "j"', {noremap = true, expr = true, silent = true})
 
