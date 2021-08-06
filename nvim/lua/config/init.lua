@@ -1,4 +1,6 @@
 require'config/compe'
+require'config/nvim-tree'
+require'config/glow'
 require'config/treesitter'
 require'config/lspconfig'
 require'config/lsp-trouble'

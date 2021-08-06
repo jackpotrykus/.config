@@ -11,3 +11,6 @@ local opts = {
 }
 
 require('symbols-outline').setup(opts)
+
+-- Toggle with <leader>so
+vim.api.nvim_set_keymap('n', '<leader>so', ':SymbolsOutline<CR>', {noremap = true})
