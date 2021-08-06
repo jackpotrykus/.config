@@ -35,12 +35,12 @@ require'packer'.startup(function()
   use 'tpope/vim-sleuth'                                 -- Detects and sets indentation settings from current file
   use 'tpope/vim-dispatch'                               -- Better compilation within (Neo-)vim
   use 'tpope/vim-commentary'                             -- Tim Pope's finest: 'gc' to comment visual regions/lines
-  use {'lervag/vimtex',   ft = 'tex'}                    -- The definitive LaTeX suite for (neo)vim
+  use {'lervag/vimtex',   ft = 'tex'}                    -- The definitive \LaTeX suite for (Neo-)vim
   use {'psf/black',       ft = 'python'}                 -- The uncompromising Python formatter
   use {'jalvesaq/Nvim-R', ft = 'r', branch = 'stable'}   -- RStudio-like R IDE in Neovim
   use {'fatih/vim-go',    ft = 'go'}                     -- Collection of tools for Go development
-  use 'metakirby5/codi.vim'                              -- Interactive scratchpad. Try :Codi python
-  use 'sindrets/diffview.nvim'                           -- Get a better diff view in a split pane
+  use 'metakirby5/codi.vim'                              -- Interactive scratchpad. Try `:Codi python`
+  use 'sindrets/diffview.nvim'                           -- Get a better diff view in a split pane with `:Diffview`
   use 'kyazdani42/nvim-tree.lua'                         -- File explorer for Neovim
   use 'norcalli/nvim-colorizer.lua'                      -- Show colors over hex symbols
   use 'airblade/vim-rooter'                              -- Change working directory to the project root, when applicable
