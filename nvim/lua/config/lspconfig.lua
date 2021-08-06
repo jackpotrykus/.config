@@ -52,10 +52,11 @@ vim.cmd([[ command! Format execute 'lua vim.lsp.buf.formatting()' ]])
 vim.cmd('inoremap <buffer><silent> <C-p> <C-p><Cmd>lua vim.lsp.buf.signature_help()<CR>')
 vim.cmd('inoremap <buffer><silent> <C-n> <C-n><Cmd>lua vim.lsp.buf.signature_help()<CR>')
 
----------------------------------------------------------------------
--- Lua LSP configuration                                           --
--- This gets a bit more involved, so it's all down here at the end --
----------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-- Lua LSP configuration                                                                     --
+-- This gets a bit more involved, so it's all down here at the end                           --
+-- See https://www.chrisatmachine.com/Neovim/28-neovim-lua-development/ for more information --
+-----------------------------------------------------------------------------------------------
 -- Load folke/lua-dev.nvim 
 local luadev = require("lua-dev").setup({
   -- add any options here, or leave empty to use the default settings
