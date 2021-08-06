@@ -29,9 +29,17 @@ end
 -- List your LSP servers here
 -- Still haven't decided which python LSP is the best... pyright is fast, but pylsp is more consistent
 local servers = {
-  'pylsp', -- 'pyright',
+  'pylsp',
+  -- 'pyright',
   -- 'jedi_language_server',
-  'r_language_server', 'clangd', 'ccls', 'gopls', 'texlab', 'bashls', 'vimls', 'ocamllsp'
+  'r_language_server',
+  'clangd',
+  'ccls',
+  'gopls',
+  'texlab',
+  'bashls',
+  'vimls',
+  'ocamllsp'
 }
 
 for _, lsp in ipairs(servers) do nvim_lsp[lsp].setup {on_attach = on_attach} end
