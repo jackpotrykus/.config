@@ -2,17 +2,17 @@
 vim.o.inccommand = 'nosplit'
 
 -- No wrap
-vim.o.wrap  = false
+vim.o.wrap = false
 
 -- Set timeoutlen
 vim.o.timeoutlen = 250
 
 -- Set highlight on search
-vim.o.hlsearch  = true
+vim.o.hlsearch = true
 vim.o.incsearch = true
 
 -- Make line numbers default
-vim.wo.number         = true
+vim.wo.number = true
 vim.wo.relativenumber = true
 
 -- Do not save when switching buffers
@@ -28,14 +28,14 @@ vim.o.breakindent = true
 vim.o.fillchars = vim.o.fillchars .. 'eob: '
 
 -- Save undo history
-vim.cmd[[set undofile]]
+vim.cmd [[set undofile]]
 
 -- Case preferences when searching
 vim.o.ignorecase = false
-vim.o.smartcase  = true
+vim.o.smartcase = true
 
 -- Decrease update time
-vim.o.updatetime  = 250
+vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
 
 -- Change preview window location
@@ -54,4 +54,5 @@ vim.o.completeopt = 'menuone,noselect' -- removed noinsert
 
 -- Set colorscheme (order is important here)
 vim.o.termguicolors = true
-vim.cmd[[colorscheme tokyonight]]
+vim.g.tokyonight_italic_comments = false
+vim.cmd [[colorscheme tokyonight]]

@@ -1,9 +1,7 @@
 -- See https://gist.github.com/folke/fe5d28423ea5380929c3f7ce674c41d8
 -- and https://www.reddit.com/r/neovim/comments/naig9y/correct_sumneko_lua_lsp_setup_for_initlua_and/
-
 -- put this file somewhere in your nvim config, like: ~/.config/nvim/lua/config/lua-lsp.lua
 -- usage: require'lspconfig'.sumneko_lua.setup(require("config.lua-lsp"))
-
 local library = {}
 
 local path = vim.split(package.path, ";")
@@ -14,7 +12,7 @@ table.insert(path, "lua/?/init.lua")
 
 local function add(lib)
   for _, p in pairs(vim.fn.expand(lib, false, true)) do
-    p          = vim.loop.fs_realpath(p)
+    p = vim.loop.fs_realpath(p)
     library[p] = true
   end
 end
@@ -46,10 +44,10 @@ return {
         -- Setup your lua path
         path = path
       },
-      completion = { callSnippet = "Both" },
+      completion = {callSnippet = "Both"},
       diagnostics = {
         -- Get the language server to recognize the `vim` global
-        globals = { "vim" }
+        globals = {"vim"}
       },
       workspace = {
         -- Make the server aware of Neovim runtime files
@@ -58,7 +56,7 @@ return {
         preloadFileSize = 50000
       },
       -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = { enable = false }
+      telemetry = {enable = false}
     }
   }
 }

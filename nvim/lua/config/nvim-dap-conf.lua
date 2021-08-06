@@ -4,22 +4,17 @@ local dapui = require('dapui').setup({
     open_on_start = true,
     elements = {
       -- You can change the order of elements in the sidebar
-      "scopes",
-      "breakpoints",
-      "stacks",
-      "watches"
+      "scopes", "breakpoints", "stacks", "watches"
     },
     width = 40,
     position = "right" -- Can be "left" or "right"
   },
   tray = {
     open_on_start = false,
-    elements = {
-      "repl"
-    },
+    elements = {"repl"},
     height = 10,
     position = "bottom" -- Can be "bottom" or "top"
-  },
+  }
 })
 
 require('dap-python').setup('`which python3`')

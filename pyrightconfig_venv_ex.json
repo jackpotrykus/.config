@@ -1,0 +1,10 @@
+{
+    "venvPath": "/Users/jackpotrykus/nferGit/clinical_research_workflow/",
+    "executionEnvironments": [
+        {
+            "root": "/Users/jackpotrykus/nferGit/clinical_research_workflow/",
+            "venv": "sdk_venv",
+            "pythonVersion": "3.8",
+        }
+    ]
+}

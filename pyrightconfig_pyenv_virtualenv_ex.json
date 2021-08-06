@@ -1,0 +1,8 @@
+# DELETE ALL HASHED LINES
+# THIS FILE MUST BE PLACED IN PROJECT ROOT
+# THIS MAKES USE OF `pyenv-virtualenv`
+# SEE https://github.com/pyenv/pyenv-virtualenv
+{
+    "venvPath": "/Users/jackpotrykus/.pyenv/versions/3.8.6/envs/"
+    "venv": "3.8.6-default"
+}

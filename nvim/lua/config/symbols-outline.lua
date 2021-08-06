@@ -7,7 +7,7 @@ local opts = {
 
   -- whether to show outline guides
   -- default: true
-  show_guides = true,
+  show_guides = true
 }
 
 require('symbols-outline').setup(opts)
