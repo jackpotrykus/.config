@@ -64,6 +64,7 @@ require'packer'.startup(function()
   use 'rcarriga/nvim-dap-ui'                             -- UI for nvim dap
   use 'mfussenegger/nvim-dap-python'                     -- Python default configs
   use 'neovim/nvim-lspconfig'                            -- Default configurations for built-in LSP client
+  use 'onsails/lspkind-nvim'                             -- VS C*de-like pictograms in completion
   use 'kabouzeid/nvim-lspinstall'                        -- Install language servers with `:LspInstall`
   use 'ray-x/lsp_signature.nvim'                         -- Better `textDocument/SignatureHelp` support
   use 'folke/lsp-trouble.nvim'                           -- Auto-updating (and pretty) list of LSP diagnostics
@@ -79,9 +80,9 @@ require'packer'.startup(function()
   use 'shaunsingh/solarized.nvim'                        -- Now in Lua
   use 'projekt0n/github-nvim-theme'                      -- It's like GitHub... but in real life
   use 'ayu-theme/ayu-vim'                                -- Ayu suite of colorschemes
-  use 'folke/tokyonight.nvim'                            -- Tokyo Night theme adapted from VS Code
+  use 'folke/tokyonight.nvim'                            -- Tokyo Night theme adapted from VS C*de
   use 'dracula/vim'                                      -- Dracula theme
-  use 'shaunsingh/moonlight.nvim'                        -- Moonlight theme adapted from VS Code
+  use 'shaunsingh/moonlight.nvim'                        -- Moonlight theme adapted from VS C*de
   use 'shaunsingh/nord.nvim'                             -- These are starting to look the same ...
   use 'marko-cerovac/material.nvim'                      -- Material suite of themes, written in Lua
   use 'nacro90/numb.nvim'                                -- Peek line 123 with :123
