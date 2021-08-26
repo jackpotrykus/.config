@@ -29,8 +29,8 @@ end
 -- List your LSP servers here
 -- Still haven't decided which python LSP is the best... pyright is fast, but pylsp is more consistent
 local servers = {
-  'pylsp',
-  -- 'pyright',
+  'pyright',
+  -- 'pylsp',
   -- 'jedi_language_server',
   'r_language_server',
   'clangd',
