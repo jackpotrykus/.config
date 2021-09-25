@@ -65,6 +65,7 @@ require'packer'.startup(function()
   use 'mfussenegger/nvim-dap-python'                     -- Python default configs
   use 'neovim/nvim-lspconfig'                            -- Default configurations for built-in LSP client
   use 'onsails/lspkind-nvim'                             -- VS C*de-like pictograms in completion
+  use 'm-pilia/vim-ccls'                                 -- ccls added features
   use 'kabouzeid/nvim-lspinstall'                        -- Install language servers with `:LspInstall`
   use 'ray-x/lsp_signature.nvim'                         -- Better `textDocument/SignatureHelp` support
   use 'folke/lsp-trouble.nvim'                           -- Auto-updating (and pretty) list of LSP diagnostics

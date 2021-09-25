@@ -31,7 +31,6 @@ end
 local servers = {
   'pyright',
   -- 'pylsp',
-  -- 'jedi_language_server',
   'r_language_server',
   'clangd',
   'ccls',

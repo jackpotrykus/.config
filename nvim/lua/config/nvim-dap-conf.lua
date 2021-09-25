@@ -6,13 +6,13 @@ local dapui = require('dapui').setup({
       -- You can change the order of elements in the sidebar
       "scopes", "breakpoints", "stacks", "watches"
     },
-    width = 40,
+    size = 40,
     position = "right" -- Can be "left" or "right"
   },
   tray = {
     open_on_start = false,
     elements = {"repl"},
-    height = 10,
+    size = 10,
     position = "bottom" -- Can be "bottom" or "top"
   }
 })

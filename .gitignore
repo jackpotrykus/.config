@@ -10,3 +10,5 @@ nvim/plugin/packer_compiled.lua
 *gcloud
 *gh
 *yarn
+*pipupgrade
+*bpyutils
