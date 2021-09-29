@@ -31,11 +31,6 @@ require'packer'.startup(function()
   use 'tpope/vim-sleuth'                                 -- Detects and sets indentation settings from current file
   use 'tpope/vim-dispatch'                               -- Better compilation within (Neo-)vim
   use 'tpope/vim-commentary'                             -- Tim Pope's finest: 'gc' to comment visual regions/lines
-  use {'lervag/vimtex', ft = 'tex'}                      -- The definitive \LaTeX suite for (Neo-)vim
-  use {'psf/black', ft = 'python'}                       -- The uncompromising Python formatter
-  use {'jalvesaq/Nvim-R', ft = 'r', branch = 'stable'}   -- RStudio-like R IDE in Neovim
-  use {'fatih/vim-go', ft = 'go'}                        -- Collection of tools for Go development
-  use 'metakirby5/codi.vim'                              -- Interactive scratchpad. Try `:Codi python`
   use 'sindrets/diffview.nvim'                           -- Get a better diff view in a split pane with `:Diffview`
   use 'kyazdani42/nvim-tree.lua'                         -- File explorer for Neovim
   use 'norcalli/nvim-colorizer.lua'                      -- Show colors over hex symbols
@@ -65,13 +60,18 @@ require'packer'.startup(function()
   use 'mfussenegger/nvim-dap-python'                     -- Python default configs
   use 'neovim/nvim-lspconfig'                            -- Default configurations for built-in LSP client
   use 'onsails/lspkind-nvim'                             -- VS C*de-like pictograms in completion
-  use 'm-pilia/vim-ccls'                                 -- ccls added features
   use 'kabouzeid/nvim-lspinstall'                        -- Install language servers with `:LspInstall`
   use 'ray-x/lsp_signature.nvim'                         -- Better `textDocument/SignatureHelp` support
   use 'folke/lsp-trouble.nvim'                           -- Auto-updating (and pretty) list of LSP diagnostics
   use 'folke/lsp-colors.nvim'                            -- Make _every_ colorscheme Treesitter compatible
-  use 'folke/todo-comments.nvim'                         -- TODO: (and other keywords) are made more visible
   use 'folke/lua-dev.nvim'                               -- Propertly configures Lua LSP for Neovim development
+  use {'lervag/vimtex', ft = 'tex'}                      -- The definitive \LaTeX suite for (Neo-)vim
+  use {'psf/black', ft = 'python'}                       -- The uncompromising Python formatter
+  use {'jalvesaq/Nvim-R', ft = 'r', branch = 'stable'}   -- RStudio-like R IDE in Neovim
+  use {'fatih/vim-go', ft = 'go'}                        -- Collection of tools for Go development
+  use {'m-pilia/vim-ccls', ft = {'c', 'cpp', 'cmake'}}   -- ccls added features
+  use 'folke/todo-comments.nvim'                         -- TODO: (and other keywords) are made more visible
+  use 'metakirby5/codi.vim'                              -- Interactive scratchpad. Try `:Codi python`
   use {'hkupty/iron.nvim', run = ":UpdateRemotePlugins"} -- Adds send-to-repl support for many programming languages
   use 'folke/which-key.nvim'                             -- Make Neovim self-documenting
   use 'kosayoda/nvim-lightbulb'                          -- Lightbulb when the cursor hovers over a textDocument/codeAction
