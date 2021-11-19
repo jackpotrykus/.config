@@ -1,4 +1,5 @@
-require 'config/compe'
+-- require 'config/compe'
+require 'config/cmp'
 require 'config/nvim-tree'
 require 'config/glow'
 require 'config/treesitter'

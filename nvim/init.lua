@@ -61,7 +61,7 @@ require'packer'.startup(function()
   use 'neovim/nvim-lspconfig'                            -- Default configurations for built-in LSP client
   use 'onsails/lspkind-nvim'                             -- VS C*de-like pictograms in completion
   use 'kabouzeid/nvim-lspinstall'                        -- Install language servers with `:LspInstall`
-  use 'ray-x/lsp_signature.nvim'                         -- Better `textDocument/SignatureHelp` support
+  -- use 'ray-x/lsp_signature.nvim'                         -- Better `textDocument/SignatureHelp` support
   use 'folke/lsp-trouble.nvim'                           -- Auto-updating (and pretty) list of LSP diagnostics
   use 'folke/lsp-colors.nvim'                            -- Make _every_ colorscheme Treesitter compatible
   use 'folke/lua-dev.nvim'                               -- Propertly configures Lua LSP for Neovim development
@@ -76,7 +76,15 @@ require'packer'.startup(function()
   use 'folke/which-key.nvim'                             -- Make Neovim self-documenting
   use 'kosayoda/nvim-lightbulb'                          -- Lightbulb when the cursor hovers over a textDocument/codeAction
   use 'simrat39/symbols-outline.nvim'                    -- Use LSP to create symbol outline
-  use 'hrsh7th/nvim-compe'                               -- Autocompletion engine
+  -- use 'hrsh7th/nvim-compe'                               -- Autocompletion engine
+  --
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'quangnguyen30192/cmp-nvim-ultisnips'
+  --
   use 'romgrk/barbar.nvim'                               -- Buffer bar with devicons and clickable buttons
   use 'shaunsingh/solarized.nvim'                        -- Now in Lua
   use 'projekt0n/github-nvim-theme'                      -- It's like GitHub... but in real life

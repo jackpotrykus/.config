@@ -1,4 +1,8 @@
+-- Setup lspconfig.
 local nvim_lsp = require 'lspconfig'
+
+-- For completion
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 -- First argument is 'client' technically, should you ever need to do something with that
 -- i.e. on_attach(client, bufnr) is a more descriptive function signature
@@ -22,8 +26,6 @@ local on_attach = function(_, bufnr)
   -- vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>',                    opts)
   -- vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
 
-  -- Load `ray-x/lsp_signature.nvim`
-  require'lsp_signature'.on_attach()
 end
 
 -- List your LSP servers here
@@ -41,7 +43,7 @@ local servers = {
   'ocamllsp'
 }
 
-for _, lsp in ipairs(servers) do nvim_lsp[lsp].setup {on_attach = on_attach} end
+for _, lsp in ipairs(servers) do nvim_lsp[lsp].setup {on_attach = on_attach, capabilities = capabilities} end
 
 -- Diagnostic formatting
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
