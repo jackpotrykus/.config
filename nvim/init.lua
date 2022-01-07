@@ -76,27 +76,25 @@ require'packer'.startup(function()
   use 'folke/which-key.nvim'                             -- Make Neovim self-documenting
   use 'kosayoda/nvim-lightbulb'                          -- Lightbulb when the cursor hovers over a textDocument/codeAction
   use 'simrat39/symbols-outline.nvim'                    -- Use LSP to create symbol outline
-  -- use 'hrsh7th/nvim-compe'                               -- Autocompletion engine
-  --
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
   use 'quangnguyen30192/cmp-nvim-ultisnips'
-  --
-  use 'romgrk/barbar.nvim'                               -- Buffer bar with devicons and clickable buttons
-  use 'shaunsingh/solarized.nvim'                        -- Now in Lua
-  use 'projekt0n/github-nvim-theme'                      -- It's like GitHub... but in real life
-  use 'ayu-theme/ayu-vim'                                -- Ayu suite of colorschemes
-  use 'folke/tokyonight.nvim'                            -- Tokyo Night theme adapted from VS C*de
-  use 'dracula/vim'                                      -- Dracula theme
-  use 'shaunsingh/moonlight.nvim'                        -- Moonlight theme adapted from VS C*de
-  use 'shaunsingh/nord.nvim'                             -- These are starting to look the same ...
-  use 'marko-cerovac/material.nvim'                      -- Material suite of themes, written in Lua
-  use 'nacro90/numb.nvim'                                -- Peek line 123 with :123
-  use 'tweekmonster/startuptime.vim'                     -- Every millisecond counts
-  use 'kyazdani42/nvim-web-devicons'                     -- Spruce up the terminal with some nice icons
+  use 'romgrk/barbar.nvim'           -- Buffer bar with devicons and clickable buttons
+  use 'shaunsingh/solarized.nvim'    -- Now in Lua
+  use 'projekt0n/github-nvim-theme'  -- It's like GitHub... but in real life
+  use 'ayu-theme/ayu-vim'            -- Ayu suite of colorschemes
+  use 'folke/tokyonight.nvim'        -- Tokyo Night theme adapted from VS C*de
+  use "rebelot/kanagawa.nvim"        -- "If gruvbox and tokyonight had a baby"
+  use 'dracula/vim'                  -- Dracula theme
+  use 'shaunsingh/moonlight.nvim'    -- Moonlight theme adapted from VS C*de
+  use 'shaunsingh/nord.nvim'         -- These are starting to look the same ...
+  use 'marko-cerovac/material.nvim'  -- Material suite of themes, written in Lua
+  use 'nacro90/numb.nvim'            -- Peek line 123 with :123
+  use 'tweekmonster/startuptime.vim' -- Every millisecond counts
+  use 'kyazdani42/nvim-web-devicons' -- Spruce up the terminal with some nice icons
 end)
 
 require 'keymaps'
