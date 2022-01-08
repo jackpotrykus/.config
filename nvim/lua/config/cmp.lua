@@ -4,9 +4,9 @@ cmp.setup({
   snippet = {
     -- REQUIRED - you must specify a snippet engine
     expand = function(args)
-      -- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+      vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
       -- require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
-      vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+      -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
       -- require'snippy'.expand_snippet(args.body) -- For `snippy` users.
     end,
   },
@@ -23,9 +23,9 @@ cmp.setup({
   },
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    -- { name = 'vsnip' }, -- For vsnip users.
+    { name = 'vsnip' }, -- For vsnip users.
     -- { name = 'luasnip' }, -- For luasnip users.
-    { name = 'ultisnips' }, -- For ultisnips users.
+    -- { name = 'ultisnips' }, -- For ultisnips users.
     -- { name = 'snippy' }, -- For snippy users.
   }, {
     { name = 'buffer' },
@@ -51,6 +51,33 @@ cmp.setup.cmdline(':', {
   })
 })
 
+_G.vimrc = _G.vimrc or {}
+_G.vimrc.cmp = _G.vimrc.cmp or {}
+_G.vimrc.cmp.lsp = function()
+  cmp.complete({
+    config = {
+      sources = {
+        { name = 'nvim_lsp' }
+      }
+    }
+  })
+end
+_G.vimrc.cmp.snippet = function()
+  cmp.complete({
+    config = {
+      sources = {
+        { name = 'vsnip' }
+      }
+    }
+  })
+end
+
+vim.cmd([[
+  inoremap <C-x><C-o> <Cmd>lua vimrc.cmp.lsp()<CR>
+  inoremap <C-x><C-s> <Cmd>lua vimrc.cmp.snippet()<CR>
+]])
+
+
 local t = function(str)
   return vim.api.nvim_replace_termcodes(str, true, true, true)
 end
@@ -73,7 +100,7 @@ _G.tab_complete = function()
   elseif check_back_space() then
     return t '<Tab>'
   else
-    return vim.fn['compe#complete']()
+    return vim.fn['vsnip#anonymous']()
   end
 end
 _G.s_tab_complete = function()

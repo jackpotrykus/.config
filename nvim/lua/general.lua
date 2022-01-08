@@ -50,9 +50,10 @@ vim.api.nvim_exec([[
 ]], false)
 
 -- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menuone,noselect' -- removed noinsert
+vim.o.completeopt = 'menu,menuone,noselect' -- removed noinsert
 
 -- Set colorscheme (order is important here)
 vim.o.termguicolors = true
 vim.g.tokyonight_italic_comments = false
-vim.cmd [[colorscheme tokyonight]]
+-- vim.cmd [[colorscheme tokyonight]]
+vim.cmd [[colorscheme kanagawa]]

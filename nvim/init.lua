@@ -22,25 +22,23 @@ vim.api.nvim_exec([[
 
 local use = require'packer'.use
 require'packer'.startup(function()
-  use 'wbthomason/packer.nvim'                           -- Package manager
-  use 'tpope/vim-vinegar'                                -- File browser (netrw) improvements
-  use 'tpope/vim-surround'                               -- 'Surround text with' actions
-  use 'tpope/vim-fugitive'                               -- The only Git plugin that matters
-  use 'tpope/vim-rhubarb'                                -- Expands on `vim-fugitive` to interact with GitHub
-  use 'tpope/vim-repeat'                                 -- More exhaustive '.'-repeats
-  use 'tpope/vim-sleuth'                                 -- Detects and sets indentation settings from current file
-  use 'tpope/vim-dispatch'                               -- Better compilation within (Neo-)vim
-  use 'tpope/vim-commentary'                             -- Tim Pope's finest: 'gc' to comment visual regions/lines
-  use 'sindrets/diffview.nvim'                           -- Get a better diff view in a split pane with `:Diffview`
-  use 'kyazdani42/nvim-tree.lua'                         -- File explorer for Neovim
-  use 'norcalli/nvim-colorizer.lua'                      -- Show colors over hex symbols
-  use 'airblade/vim-rooter'                              -- Change working directory to the project root, when applicable
-  use 'numtostr/FTerm.nvim'                              -- Floating terminal! There when you need it
-  use 'ludovicchabant/vim-gutentags'                     -- Automatic tags management
-  use 'godlygeek/tabular'                                -- Align text with ':Tab', like these comments
-  use 'SirVer/ultisnips'                                 -- Still the best snippet managemens
-  use 'honza/vim-snippets'                               -- Sensible default snippets for many languages
-  use "vhyrro/neorg"                                     -- A modern organizer
+  use 'wbthomason/packer.nvim'       -- Package manager
+  use 'tpope/vim-vinegar'            -- File browser (netrw) improvements
+  use 'tpope/vim-surround'           -- 'Surround text with' actions
+  use 'tpope/vim-fugitive'           -- The only Git plugin that matters
+  use 'tpope/vim-rhubarb'            -- Expands on `vim-fugitive` to interact with GitHub
+  use 'tpope/vim-repeat'             -- More exhaustive '.'-repeats
+  use 'tpope/vim-sleuth'             -- Detects and sets indentation settings from current file
+  use 'tpope/vim-dispatch'           -- Better compilation within (Neo-)vim
+  use 'tpope/vim-commentary'         -- Tim Pope's finest: 'gc' to comment visual regions/lines
+  use 'sindrets/diffview.nvim'       -- Get a better diff view in a split pane with `:Diffview`
+  use 'kyazdani42/nvim-tree.lua'     -- File explorer for Neovim
+  use 'norcalli/nvim-colorizer.lua'  -- Show colors over hex symbols
+  use 'airblade/vim-rooter'          -- Change working directory to the project root, when applicable
+  use 'numtostr/FTerm.nvim'          -- Floating terminal! There when you need it
+  use 'ludovicchabant/vim-gutentags' -- Automatic tags management
+  use 'godlygeek/tabular'            -- Align text with ':Tab', like these comments
+  use "vhyrro/neorg"                 -- A modern organizer
   use {
     'nvim-telescope/telescope.nvim',                     -- Snazzy fzf, written in lua
     requires = {
@@ -81,7 +79,12 @@ require'packer'.startup(function()
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
-  use 'quangnguyen30192/cmp-nvim-ultisnips'
+
+  --
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
+  use 'hrsh7th/vim-vsnip-integ'
+  --
   use 'romgrk/barbar.nvim'           -- Buffer bar with devicons and clickable buttons
   use 'shaunsingh/solarized.nvim'    -- Now in Lua
   use 'projekt0n/github-nvim-theme'  -- It's like GitHub... but in real life
