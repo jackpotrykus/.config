@@ -59,9 +59,9 @@ require'packer'.startup(function()
   use 'neovim/nvim-lspconfig'                            -- Default configurations for built-in LSP client
   use 'onsails/lspkind-nvim'                             -- VS C*de-like pictograms in completion
   use 'kabouzeid/nvim-lspinstall'                        -- Install language servers with `:LspInstall`
-  -- use 'ray-x/lsp_signature.nvim'                         -- Better `textDocument/SignatureHelp` support
-  use 'folke/lsp-trouble.nvim'                           -- Auto-updating (and pretty) list of LSP diagnostics
+  use 'ray-x/lsp_signature.nvim'                         -- Better `textDocument/SignatureHelp` support
   use 'folke/lsp-colors.nvim'                            -- Make _every_ colorscheme Treesitter compatible
+  use 'folke/lsp-trouble.nvim'                           -- Auto-updating (and pretty) list of LSP diagnostics
   use 'folke/lua-dev.nvim'                               -- Propertly configures Lua LSP for Neovim development
   use {'lervag/vimtex', ft = 'tex'}                      -- The definitive \LaTeX suite for (Neo-)vim
   use {'psf/black', ft = 'python'}                       -- The uncompromising Python formatter
@@ -84,6 +84,7 @@ require'packer'.startup(function()
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/vim-vsnip-integ'
+  use 'kitagry/vs-snippets'
   --
   use 'romgrk/barbar.nvim'           -- Buffer bar with devicons and clickable buttons
   use 'shaunsingh/solarized.nvim'    -- Now in Lua
