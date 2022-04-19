@@ -61,19 +61,19 @@ vim.api.nvim_set_keymap('i', '<C-L>', '<Esc>:BufferMoveNext<CR>', {noremap = tru
 
 -- Toggle to disable mouse mode and indentlines for easier paste
 ToggleMouse = function()
-  if vim.o.mouse == 'a' then
-    vim.cmd [[IndentBlanklineDisable]]
-    vim.wo.signcolumn = 'no'
-    vim.o.mouse = 'v'
-    vim.wo.number = false
-    print('Mouse disabled')
-  else
-    vim.cmd [[IndentBlanklineEnable]]
-    vim.wo.signcolumn = 'yes'
-    vim.o.mouse = 'a'
-    vim.wo.number = true
-    print('Mouse enabled')
-  end
+    if vim.o.mouse == 'a' then
+        vim.cmd [[IndentBlanklineDisable]]
+        vim.wo.signcolumn = 'no'
+        vim.o.mouse = 'v'
+        vim.wo.number = false
+        print('Mouse disabled')
+    else
+        vim.cmd [[IndentBlanklineEnable]]
+        vim.wo.signcolumn = 'yes'
+        vim.o.mouse = 'a'
+        vim.wo.number = true
+        print('Mouse enabled')
+    end
 end
 
 -- ToggleMouse with <F10>
