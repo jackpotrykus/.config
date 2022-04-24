@@ -66,7 +66,7 @@ require'packer'.startup(function()
     use 'kabouzeid/nvim-lspinstall' -- Install language servers with `:LspInstall`
     use 'folke/lsp-colors.nvim' -- Make _every_ colorscheme Treesitter compatible
     use 'folke/lua-dev.nvim' -- Propertly configures Lua LSP for Neovim development
-    use 'ray-x/lsp_signature.nvim' -- Better `textDocument/SignatureHelp` support
+    -- use 'ray-x/lsp_signature.nvim' -- Better `textDocument/SignatureHelp` support
     use 'folke/lsp-trouble.nvim' -- Auto-updating (and pretty) list of LSP diagnostics
     use 'nvim-treesitter/nvim-treesitter' -- Treesitter parsing
     -- Debugging
@@ -87,6 +87,7 @@ require'packer'.startup(function()
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp-signature-help' -- Better `textDocument/SignatureHelp` support, NOTE: now integrated with cmp!
     -- (Allow nvim-cmp to interact with vim-vsnip and vs-snippets integration)
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'

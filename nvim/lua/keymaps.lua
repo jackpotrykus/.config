@@ -36,10 +36,10 @@ vim.api.nvim_set_keymap('n', 'j', 'v:count == 0 ? "gj" : "j"', {noremap = true, 
 vim.api.nvim_set_keymap('n', 'Y', 'y$', {noremap = true})
 
 -- <Tab> and <S-Tab> completion
-vim.api.nvim_set_keymap('i', '<Tab>', 'v:lua.tab_complete()', {expr = true})
-vim.api.nvim_set_keymap('s', '<Tab>', 'v:lua.tab_complete()', {expr = true})
-vim.api.nvim_set_keymap('i', '<S-Tab>', 'v:lua.s_tab_complete()', {expr = true})
-vim.api.nvim_set_keymap('s', '<S-Tab>', 'v:lua.s_tab_complete()', {expr = true})
+-- vim.api.nvim_set_keymap('i', '<Tab>', 'v:lua.tab_complete()', {expr = true})
+-- vim.api.nvim_set_keymap('s', '<Tab>', 'v:lua.tab_complete()', {expr = true})
+-- vim.api.nvim_set_keymap('i', '<S-Tab>', 'v:lua.s_tab_complete()', {expr = true})
+-- vim.api.nvim_set_keymap('s', '<S-Tab>', 'v:lua.s_tab_complete()', {expr = true})
 
 -- Tab navigation
 vim.api.nvim_set_keymap('n', '<C-T>', ':tabnew<CR>', {noremap = true})
